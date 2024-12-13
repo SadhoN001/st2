@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+
+    
+    <section id="hero">
+        <h2>Welcome to Index part</h2>
+        <p>I'm a passionate developer specializing in web and software development.</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </section>
+
+{% include 'about.html' %}   
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Bootstrap</div>
+            <div class="skill">Django</div>
+            <div class="skill">Python</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>A brief description of your project.</p>
+                <a href="https://github.com/sadhon001" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>A brief description of your project.</p>
+                <a href="https://github.com/sadhon001" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or questions.</p>
+        <ul>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:sadhon.dev@example.com">sadhon.dev@example.com</a></li>
+            <li><i class="fas fa-phone"></i> +880-1234-567890</li>
+            <li><i class="fab fa-github"></i> <a href="https://github.com/sadhon001" target="_blank">GitHub</a></li>
+        </ul>
+    </section>
+
+{% endblock  %}
